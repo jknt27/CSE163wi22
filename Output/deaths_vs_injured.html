@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "title": {"fontSize": 25}}, "vconcat": [{"mark": "bar", "encoding": {"tooltip": [{"field": "state", "title": "State", "type": "nominal"}, {"field": "n_killed", "title": "People Killed", "type": "quantitative"}], "x": {"field": "state", "sort": "-y", "title": "US States", "type": "nominal"}, "y": {"field": "n_killed", "title": "Number of People Killed", "type": "quantitative"}}, "title": "People Killed per State"}, {"mark": "bar", "encoding": {"tooltip": [{"field": "state", "title": "State", "type": "nominal"}, {"field": "n_injured", "title": "People Injured", "type": "quantitative"}], "x": {"field": "state", "sort": "-y", "title": "US States", "type": "nominal"}, "y": {"field": "n_injured", "title": "Number of People Injured", "type": "quantitative"}}, "title": "People Injured per State"}], "data": {"name": "data-a44a5fbc0cdc11b891cb9570dbb5a854"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-a44a5fbc0cdc11b891cb9570dbb5a854": [{"state": "Alabama", "n_killed": 1821, "n_injured": 2952, "total dead and injured": 4773}, {"state": "Alaska", "n_killed": 250, "n_injured": 307, "total dead and injured": 557}, {"state": "Arizona", "n_killed": 1063, "n_injured": 1060, "total dead and injured": 2123}, {"state": "Arkansas", "n_killed": 735, "n_injured": 1302, "total dead and injured": 2037}, {"state": "California", "n_killed": 5397, "n_injured": 7506, "total dead and injured": 12903}, {"state": "Colorado", "n_killed": 742, "n_injured": 1088, "total dead and injured": 1830}, {"state": "Connecticut", "n_killed": 326, "n_injured": 1221, "total dead and injured": 1547}, {"state": "Delaware", "n_killed": 209, "n_injured": 838, "total dead and injured": 1047}, {"state": "District of Columbia", "n_killed": 430, "n_injured": 1377, "total dead and injured": 1807}, {"state": "Florida", "n_killed": 3735, "n_injured": 6858, "total dead and injured": 10593}, {"state": "Georgia", "n_killed": 2348, "n_injured": 3964, "total dead and injured": 6312}, {"state": "Hawaii", "n_killed": 57, "n_injured": 81, "total dead and injured": 138}, {"state": "Idaho", "n_killed": 158, "n_injured": 135, "total dead and injured": 293}, {"state": "Illinois", "n_killed": 3124, "n_injured": 13107, "total dead and injured": 16231}, {"state": "Indiana", "n_killed": 1485, "n_injured": 2819, "total dead and injured": 4304}, {"state": "Iowa", "n_killed": 250, "n_injured": 801, "total dead and injured": 1051}, {"state": "Kansas", "n_killed": 512, "n_injured": 902, "total dead and injured": 1414}, {"state": "Kentucky", "n_killed": 1018, "n_injured": 1818, "total dead and injured": 2836}, {"state": "Louisiana", "n_killed": 2021, "n_injured": 4225, "total dead and injured": 6246}, {"state": "Maine", "n_killed": 111, "n_injured": 132, "total dead and injured": 243}, {"state": "Maryland", "n_killed": 1624, "n_injured": 3087, "total dead and injured": 4711}, {"state": "Massachusetts", "n_killed": 441, "n_injured": 1635, "total dead and injured": 2076}, {"state": "Michigan", "n_killed": 1480, "n_injured": 2857, "total dead and injured": 4337}, {"state": "Minnesota", "n_killed": 419, "n_injured": 878, "total dead and injured": 1297}, {"state": "Mississippi", "n_killed": 1133, "n_injured": 1827, "total dead and injured": 2960}, {"state": "Missouri", "n_killed": 2053, "n_injured": 3485, "total dead and injured": 5538}, {"state": "Montana", "n_killed": 148, "n_injured": 130, "total dead and injured": 278}, {"state": "Nebraska", "n_killed": 213, "n_injured": 654, "total dead and injured": 867}, {"state": "Nevada", "n_killed": 754, "n_injured": 919, "total dead and injured": 1673}, {"state": "New Hampshire", "n_killed": 85, "n_injured": 137, "total dead and injured": 222}, {"state": "New Jersey", "n_killed": 1108, "n_injured": 2475, "total dead and injured": 3583}, {"state": "New Mexico", "n_killed": 476, "n_injured": 528, "total dead and injured": 1004}, {"state": "New York", "n_killed": 1653, "n_injured": 4942, "total dead and injured": 6595}, {"state": "North Carolina", "n_killed": 2110, "n_injured": 4489, "total dead and injured": 6599}, {"state": "North Dakota", "n_killed": 64, "n_injured": 126, "total dead and injured": 190}, {"state": "Ohio", "n_killed": 2326, "n_injured": 5475, "total dead and injured": 7801}, {"state": "Oklahoma", "n_killed": 885, "n_injured": 1485, "total dead and injured": 2370}, {"state": "Oregon", "n_killed": 419, "n_injured": 673, "total dead and injured": 1092}, {"state": "Pennsylvania", "n_killed": 2254, "n_injured": 4882, "total dead and injured": 7136}, {"state": "Rhode Island", "n_killed": 56, "n_injured": 338, "total dead and injured": 394}, {"state": "South Carolina", "n_killed": 1518, "n_injured": 3010, "total dead and injured": 4528}, {"state": "South Dakota", "n_killed": 82, "n_injured": 107, "total dead and injured": 189}, {"state": "Tennessee", "n_killed": 1716, "n_injured": 4324, "total dead and injured": 6040}, {"state": "Texas", "n_killed": 4715, "n_injured": 5793, "total dead and injured": 10508}, {"state": "Utah", "n_killed": 259, "n_injured": 375, "total dead and injured": 634}, {"state": "Vermont", "n_killed": 53, "n_injured": 67, "total dead and injured": 120}, {"state": "Virginia", "n_killed": 1355, "n_injured": 3371, "total dead and injured": 4726}, {"state": "Washington", "n_killed": 790, "n_injured": 1240, "total dead and injured": 2030}, {"state": "West Virginia", "n_killed": 311, "n_injured": 609, "total dead and injured": 920}, {"state": "Wisconsin", "n_killed": 815, "n_injured": 2072, "total dead and injured": 2887}, {"state": "Wyoming", "n_killed": 71, "n_injured": 52, "total dead and injured": 123}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

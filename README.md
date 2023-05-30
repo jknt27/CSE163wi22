@@ -9,7 +9,7 @@ The main Python file will take care of everything.
 an advanced data visualization library must be installed prior to running.
 Link to [Altair](https://altair-viz.github.io/getting_started/installation.html).
 
-All the necessaray files are already located within the [project_data](./project_data/) folder and ready to go!
+All the necessaray data files are located on [Google Drive](https://drive.google.com/file/d/15ipa5Hu7dV4ZeoZmh1Y_ij1Q6gtdCn72/view?usp=share_link). Please add the files to the [project_data](./project_data/) folder and you're ready to go!
 All plots will output into the [Output](./Output/) folder. The advanced visualization plots are in a ***.html*** format which
 allow for easy access (no special software needed).
 >Right Click on these **.html** files and open in your browser!

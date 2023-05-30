@@ -1,10 +1,7 @@
 # The Statistics of Gun Violence within the United States of America 
 ## By: Nghi Huynh, Minh Mai, Joseph Tran
-#
-#
-#
-#
-#### Project details
+
+### Project details
 Hello and welcome to our project on Gun Violence within the United States of America!
 To get started please open and run the [main](main.py) file. You **will not** need to run the [us_visual](us_visual.py) or [world](world.py) Python files.
 The main Python file will take care of everything. 
@@ -18,9 +15,7 @@ allow for easy access (no special software needed).
 >Right Click on these **.html** files and open in your browser!
 
 The other plots can be found as a normal image file ***.png***.
-#
-#
-#
+<br/>
 ### Links to dataset
 All the links to the datasets we used are below.
 
